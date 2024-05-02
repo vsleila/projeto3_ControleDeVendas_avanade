@@ -16,3 +16,4 @@ namespace ProjetoControleVendas.Models
         public string? Controle { get; set; }
     }
 }
+

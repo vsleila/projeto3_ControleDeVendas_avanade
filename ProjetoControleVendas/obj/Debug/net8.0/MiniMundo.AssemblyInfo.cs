@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniMundo")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+51df63cf084960526418c150794e815d320a16f1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8377274e6faff05bc1df7df1003bd25aa4f38b83")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniMundo")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniMundo")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

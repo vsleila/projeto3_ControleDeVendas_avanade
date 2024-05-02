@@ -5,27 +5,27 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using MiniMundo.Models;
 using ProjetoControleVendas.Data;
-using ProjetoControleVendas.Models;
 
 namespace MiniMundo.Controllers
 {
-    public class AdministradorController : Controller
+    public class NivelDeAcessoesController : Controller
     {
         private readonly ProjetoControleVendasContext _context;
 
-        public AdministradorController(ProjetoControleVendasContext context)
+        public NivelDeAcessoesController(ProjetoControleVendasContext context)
         {
             _context = context;
         }
 
-        // GET: Administrador
+        // GET: NivelDeAcessoes
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Administrador.ToListAsync());
+            return View(await _context.NivelDeAcesso.ToListAsync());
         }
 
-        // GET: Administrador/Details/5
+        // GET: NivelDeAcessoes/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -33,39 +33,39 @@ namespace MiniMundo.Controllers
                 return NotFound();
             }
 
-            var administrador = await _context.Administrador
-                .FirstOrDefaultAsync(m => m.AdministradorID == id);
-            if (administrador == null)
+            var nivelDeAcesso = await _context.NivelDeAcesso
+                .FirstOrDefaultAsync(m => m.NivelDeAcessoID == id);
+            if (nivelDeAcesso == null)
             {
                 return NotFound();
             }
 
-            return View(administrador);
+            return View(nivelDeAcesso);
         }
 
-        // GET: Administrador/Create
+        // GET: NivelDeAcessoes/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Administrador/Create
+        // POST: NivelDeAcessoes/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("AdministradorID,Nome,Controle")] Administrador administrador)
+        public async Task<IActionResult> Create([Bind("NivelDeAcessoID")] NivelDeAcesso nivelDeAcesso)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(administrador);
+                _context.Add(nivelDeAcesso);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(administrador);
+            return View(nivelDeAcesso);
         }
 
-        // GET: Administrador/Edit/5
+        // GET: NivelDeAcessoes/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -73,22 +73,22 @@ namespace MiniMundo.Controllers
                 return NotFound();
             }
 
-            var administrador = await _context.Administrador.FindAsync(id);
-            if (administrador == null)
+            var nivelDeAcesso = await _context.NivelDeAcesso.FindAsync(id);
+            if (nivelDeAcesso == null)
             {
                 return NotFound();
             }
-            return View(administrador);
+            return View(nivelDeAcesso);
         }
 
-        // POST: Administrador/Edit/5
+        // POST: NivelDeAcessoes/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("AdministradorID,Nome,Controle")] Administrador administrador)
+        public async Task<IActionResult> Edit(int id, [Bind("NivelDeAcessoID")] NivelDeAcesso nivelDeAcesso)
         {
-            if (id != administrador.AdministradorID)
+            if (id != nivelDeAcesso.NivelDeAcessoID)
             {
                 return NotFound();
             }
@@ -97,12 +97,12 @@ namespace MiniMundo.Controllers
             {
                 try
                 {
-                    _context.Update(administrador);
+                    _context.Update(nivelDeAcesso);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!AdministradorExists(administrador.AdministradorID))
+                    if (!NivelDeAcessoExists(nivelDeAcesso.NivelDeAcessoID))
                     {
                         return NotFound();
                     }
@@ -113,10 +113,10 @@ namespace MiniMundo.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(administrador);
+            return View(nivelDeAcesso);
         }
 
-        // GET: Administrador/Delete/5
+        // GET: NivelDeAcessoes/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -124,34 +124,34 @@ namespace MiniMundo.Controllers
                 return NotFound();
             }
 
-            var administrador = await _context.Administrador
-                .FirstOrDefaultAsync(m => m.AdministradorID == id);
-            if (administrador == null)
+            var nivelDeAcesso = await _context.NivelDeAcesso
+                .FirstOrDefaultAsync(m => m.NivelDeAcessoID == id);
+            if (nivelDeAcesso == null)
             {
                 return NotFound();
             }
 
-            return View(administrador);
+            return View(nivelDeAcesso);
         }
 
-        // POST: Administrador/Delete/5
+        // POST: NivelDeAcessoes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var administrador = await _context.Administrador.FindAsync(id);
-            if (administrador != null)
+            var nivelDeAcesso = await _context.NivelDeAcesso.FindAsync(id);
+            if (nivelDeAcesso != null)
             {
-                _context.Administrador.Remove(administrador);
+                _context.NivelDeAcesso.Remove(nivelDeAcesso);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool AdministradorExists(int id)
+        private bool NivelDeAcessoExists(int id)
         {
-            return _context.Administrador.Any(e => e.AdministradorID == id);
+            return _context.NivelDeAcesso.Any(e => e.NivelDeAcessoID == id);
         }
     }
 }

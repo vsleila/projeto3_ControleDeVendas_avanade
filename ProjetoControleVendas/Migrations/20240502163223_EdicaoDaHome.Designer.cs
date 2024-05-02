@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using ProjetoControleVendas.Data;
 
@@ -11,9 +12,11 @@ using ProjetoControleVendas.Data;
 namespace MiniMundo.Migrations
 {
     [DbContext(typeof(ProjetoControleVendasContext))]
-    partial class ProjetoControleVendasContextModelSnapshot : ModelSnapshot
+    [Migration("20240502163223_EdicaoDaHome")]
+    partial class EdicaoDaHome
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -22,34 +25,25 @@ namespace MiniMundo.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("MiniMundo.Models.Clientes", b =>
+            modelBuilder.Entity("ProjetoControleVendas.Models.Administrador", b =>
                 {
-                    b.Property<int>("ClientesID")
+                    b.Property<int>("AdministradorID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ClientesID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("AdministradorID"));
+
+                    b.Property<string>("Controle")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("ClientesID");
+                    b.HasKey("AdministradorID");
 
-                    b.ToTable("Clientes");
-                });
-
-            modelBuilder.Entity("MiniMundo.Models.NivelDeAcesso", b =>
-                {
-                    b.Property<int>("NivelDeAcessoID")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("NivelDeAcessoID"));
-
-                    b.HasKey("NivelDeAcessoID");
-
-                    b.ToTable("NivelDeAcesso");
+                    b.ToTable("Administrador");
                 });
 
             modelBuilder.Entity("ProjetoControleVendas.Models.Funcionarios", b =>

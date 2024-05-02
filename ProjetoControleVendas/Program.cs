@@ -1,3 +1,6 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using ProjetoControleVendas.Data;
 namespace ProjetoControleVendas
 {
     public class Program
@@ -5,6 +8,8 @@ namespace ProjetoControleVendas
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<ProjetoControleVendasContext>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("ProjetoControleVendasContext") ?? throw new InvalidOperationException("Connection string 'ProjetoControleVendasContext' not found.")));
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();

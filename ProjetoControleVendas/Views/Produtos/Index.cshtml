@@ -6,8 +6,10 @@
 
 <h1>Produtos</h1>
 
+<p>Página para cadastro de Produtos</p>
+
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Criar novo Produto</a>
 </p>
 <table class="table">
     <thead>
@@ -19,9 +21,9 @@
 @foreach (var item in Model) {
         <tr>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ProdutosID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ProdutosID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ProdutosID">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.ProdutosID">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.ProdutosID">Detalhes</a> |
+                <a asp-action="Delete" asp-route-id="@item.ProdutosID">Deletar</a>
             </td>
         </tr>
 }

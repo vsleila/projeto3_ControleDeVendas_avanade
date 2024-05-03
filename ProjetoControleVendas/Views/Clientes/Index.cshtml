@@ -9,6 +9,10 @@
 <p>Bem-vindo a página do cliente!</p>
 <br />
 
+<div class="d-grid gap-2 col-6 mx-auto">
+    <button onclick="redirecionar('produto')" class="btn btn-primary" type="button">Produtos</button>
+</div>
+
 <p>
     <a asp-action="Create">Cadastrar Novo Cliente</a>
 </p>
@@ -40,35 +44,45 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CPF)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Endereco)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Bairro)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Numero)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Atividade)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.ClientesID">Editar</a> |
-                <a asp-action="Details" asp-route-id="@item.ClientesID">Detalhes</a> |
-                <a asp-action="Delete" asp-route-id="@item.ClientesID">Deletar</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CPF)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Telefone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Endereco)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Bairro)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Numero)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Atividade)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.ClientesID">Editar</a> |
+                    <a asp-action="Details" asp-route-id="@item.ClientesID">Detalhes</a> |
+                    <a asp-action="Delete" asp-route-id="@item.ClientesID">Deletar</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
+
+
+<script>
+    function redirecionar(destino) {
+        if (destino === "produto") {
+            window.location.href = "Produtos";
+        }
+    }
+</script>

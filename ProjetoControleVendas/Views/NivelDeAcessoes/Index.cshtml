@@ -4,26 +4,31 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>ADM</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.NivelDeAcessoID">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.NivelDeAcessoID">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.NivelDeAcessoID">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<p>Bem-vindo à página do Administrador</p>
+<br />
+
+<div class="d-grid gap-2 col-6 mx-auto">
+    <button onclick="redirecionar('cliente')" class="btn btn-primary" type="button">Clientes</button>
+    <button onclick="redirecionar('funcionario')" class="btn btn-primary" type="button">Funcionários</button>
+    <button onclick="redirecionar('produto')" class="btn btn-primary" type="button">Produtos</button>
+    <button onclick="redirecionar('venda')" class="btn btn-primary" type="button">Vendas</button>
+    <button onclick="redirecionar('acesso')" class="btn btn-primary" type="button">Configuração</button>
+</div>
+
+<script>
+    function redirecionar(id) {
+        if (id === "produto") {
+            window.location.href = "Produtos";
+        } else if (id === "venda") {
+            window.location.href = "Vendas";
+        } else if (id === "cliente") {
+            window.location.href = "Clientes";
+        } else if (id === "funcionario") {
+            window.location.href = "Funcionarios";
+        } else if (id === "acesso") {
+            window.location.href = "NivelDeAcessoes";
+        }
+    }
+</script>

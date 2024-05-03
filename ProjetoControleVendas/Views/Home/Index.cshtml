@@ -2,45 +2,64 @@
     ViewData["Title"] = "Home Page";
 }
 
-
+<br />
 <div class="text-center">
-    <h1 class="display-4">Seja bem-vindo!</h1>
+    <h1 class="display-4 textoboasvindas">Seja bem-vindo!</h1>
     <p>Faça o login para ter acesso ao Sistema</p>
 
 </div>
 
 <div>
     <br />
-    <br />
 
     <form>
-        <div class="d-flex justify-content-center">
-        <fieldset>
-            <div class="mb-3">
-                <label for="Select" class="form-label">Login</label>
-                <select class="form-select" aria-label="select example">
-                    <option value="1">Funcionário</option>
-                    <option value="2">Cliente</option>
-                    <option value="3">Administrador</option>
-                </select>
-            </div>
+        <div class="d-flex justify-content-evenly">
+            <fieldset>
 
-            <div class="mb-3">
-                <label for="TextInput" class="form-label">Senha</label>
-                <input type="text" class="form-control" placeholder="Digite a sua senha">
-            </div>
-            <div id="emailHelp" class="form-text"><a href="#" style="text-decoration: none"> Esqueceu a senha? Clique aqui</a></div>
+                <div class="mb-3">
+                    <label for="TextInput" class="form-label">Login</label>
+                    <input type="text" class="form-control" placeholder="Digite seu Login">
+                </div>
 
-            <br />
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </fieldset>
+                <div class="mb-3">
+                    <label for="Select" class="form-label">Categoria</label>
+                    <select class="form-select" id="categoria" aria-label="select example">
+                        <option value="Funcionario">Funcionário</option>
+                        <option value="Cliente">Cliente</option>
+                        <option value="Administrador">Administrador</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="TextInput" class="form-label">Senha</label>
+                    <input type="password" class="form-control" placeholder="Digite a sua senha">
+                </div>
+
+                <div id="emailHelp" class="form-text"><a href="#" style="text-decoration: none"> Esqueceu a senha? Clique aqui</a></div>
+
+                <br />
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button onclick="redirecionar()" class="btn btn-primary" type="button">Enviar</button>
+                </div>
+            </fieldset>
         </div>
     </form>
 
+    <div class="container nomefinal">
+        Projeto Desenvolvido por <strong>Leila Vasconcelos</strong>
+    </div>
 
-<br />
-<br />
 
-<div class="container">
-    Projeto Desenvolvido por Leila Vasconcelos
-</div>
+    
+    <script>
+        function redirecionar() {
+            var categoriaSelecionada = document.getElementById("categoria").value;
+            if (categoriaSelecionada === "Funcionario") {
+                window.location.href = "Funcionarios";
+            } else if (categoriaSelecionada === "Cliente") {
+                window.location.href = "Clientes";
+            } else if (categoriaSelecionada === "Administrador") {
+                window.location.href = "NivelDeAcessoes";
+            }
+        }
+    </script>

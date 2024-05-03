@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|c:\\users\\l.silva.vasconcelos\\onedrive - avanade\\avanade\\curso - impacta\\projeto3_controledevendas_avanade\\projetocontrolevendas\\views\\funcionarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|solutionrelative:views\\funcionarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|c:\\users\\l.silva.vasconcelos\\onedrive - avanade\\avanade\\curso - impacta\\projeto3_controledevendas_avanade\\projetocontrolevendas\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|c:\\users\\l.silva.vasconcelos\\onedrive - avanade\\avanade\\curso - impacta\\projeto3_controledevendas_avanade\\projetocontrolevendas\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,26 +38,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\Views\\Funcionarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Funcionarios\\Index.cshtml",
+              "ToolTip": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\Views\\Funcionarios\\Index.cshtml",
+              "RelativeToolTip": "Views\\Funcionarios\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T00:29:32.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-02T23:54:49.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAwC4AAAAAAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADQAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-02T17:26:37.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAEAAAAAAAAAAADwvwwAAAAMAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAABkAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-02T17:26:32.706Z",
               "EditorCaption": ""

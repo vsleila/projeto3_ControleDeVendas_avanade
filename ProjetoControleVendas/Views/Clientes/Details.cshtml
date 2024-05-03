@@ -7,7 +7,7 @@
 <h1>Detalhes</h1>
 
 <div>
-    <h4>Clientes</h4>
+
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
@@ -16,9 +16,47 @@
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Nome)
         </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CPF)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CPF)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Telefone)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Telefone)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Endereco)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Endereco)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Bairro)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Bairro)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Numero)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Numero)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Atividade)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Atividade)
+        </dd>
     </dl>
 </div>
+<br />
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.ClientesID">Editar</a> |
+    <a asp-action="Editar" asp-route-id="@Model?.ClientesID">Editar</a> 
+    <br />
     <a asp-action="Index">Voltar para a lista</a>
 </div>

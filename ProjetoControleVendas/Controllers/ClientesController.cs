@@ -54,7 +54,7 @@ namespace MiniMundo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ClientesID,Nome")] Clientes clientes)
+        public async Task<IActionResult> Create([Bind("ClientesID,Nome,CPF,Telefone,Endereco,Bairro,Numero,Atividade")] Clientes clientes)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace MiniMundo.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ClientesID,Nome")] Clientes clientes)
+        public async Task<IActionResult> Edit(int id, [Bind("ClientesID,Nome,CPF,Telefone,Endereco,Bairro,Numero,Atividade")] Clientes clientes)
         {
             if (id != clientes.ClientesID)
             {

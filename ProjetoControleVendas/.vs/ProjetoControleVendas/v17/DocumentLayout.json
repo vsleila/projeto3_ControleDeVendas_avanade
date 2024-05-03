@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|c:\\users\\l.silva.vasconcelos\\onedrive - avanade\\avanade\\curso - impacta\\projeto3_controledevendas_avanade\\projetocontrolevendas\\views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|solutionrelative:views\\clientes\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|c:\\users\\l.silva.vasconcelos\\onedrive - avanade\\avanade\\curso - impacta\\projeto3_controledevendas_avanade\\projetocontrolevendas\\views\\funcionarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|solutionrelative:views\\funcionarios\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|c:\\users\\l.silva.vasconcelos\\onedrive - avanade\\avanade\\curso - impacta\\projeto3_controledevendas_avanade\\projetocontrolevendas\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{9AE3EC15-8ECD-4F34-9DA0-56177A9B59E4}|MiniMundo.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +30,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAEEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-03T13:01:23.645Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\Views\\Clientes\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Clientes\\Index.cshtml",
-              "ToolTip": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\Views\\Clientes\\Index.cshtml",
-              "RelativeToolTip": "Views\\Clientes\\Index.cshtml",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAAA4AAAADAAAA",
+              "DocumentMoniker": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\Views\\Funcionarios\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Funcionarios\\Index.cshtml",
+              "ToolTip": "C:\\Users\\l.silva.vasconcelos\\OneDrive - Avanade\\Avanade\\Curso - Impacta\\projeto3_ControleDeVendas_avanade\\ProjetoControleVendas\\Views\\Funcionarios\\Index.cshtml",
+              "RelativeToolTip": "Views\\Funcionarios\\Index.cshtml",
+              "ViewState": "AQIAADAAAAAAAAAAAAAAAE0AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-03T00:45:45.528Z",
+              "WhenOpened": "2024-05-03T12:53:42.735Z",
               "EditorCaption": ""
             }
           ]
